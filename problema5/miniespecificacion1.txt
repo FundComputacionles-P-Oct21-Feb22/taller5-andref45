@@ -1,0 +1,56 @@
+//Se debe generar un algoritmo y miniespecificación que permita calcular y mostrar el valor total a pagar mensual de servicios básicos de una persona. Los servicios básicos son: agua, teléfono. Si la persona es menor a 20 años se descuenta el 20% del total mensual. Para calcular el costo mensual a pagar el agua, se debe ingresar el número de litros de agua consumidos en el mes y el costo de cada litro de agua. Para calcular el costo del teléfono, se debe ingresar el número de minutos gastados en el mes y el costo de cada minuto.
+
+Algoritmo
+1. Inicio 
+2. Se pide ingresar la edad de la persona
+3. Se pide ingresar el número de litros de agua consumidos en el mes
+4. Se pide ingresar el costo por litro de agua
+5. Se pide ingresar el número de minutos gastados en el mes
+6. Se pide ingresar el costo por minuto
+7. Se realiza la operación de multiplicar número de litros de agua consumidos en el mes por 
+   el costo por litro de agua
+8. Se realiza la operación de multiplicar número de litros de agua consumidos en el mes por 
+   el costo por litro de agua
+9. Si la persona es menor de 20 años se realizará un descuento del 20% a el total mensual
+10. Se muestra en pantalla el resultado de multiplicar número de litros de agua consumidos en el mes
+    por el costo por litro de agua
+11. Se muestra en pantalla el número de minutos gastados en el mes por el costo por minuto. 
+12. Fin 
+
+
+Miniespecificación
+1. Inicio 
+2. edad, i[0, n]
+3. numero_litros, d[0, n]
+4. costo_litros, d[0, n]
+5. numero_minutos, d[0, n]
+6. costo_minutos, d[0, n]
+7. costoT_agua, d[0, n]
+8. costoT_telefono d[0, n]
+9. descuento: d[0, n]
+10. porcentaje: d[0, n] 
+11. costoTotal: d[0,n]
+
+12. porcentaje <-- 20
+
+13. Escribir "Ingrese su edad"
+14. Lea edad
+15. Escribir "Ingrese el número de litros de agua consumidos en el mes" 
+16. Lea numero_litros
+17. Escribir "Ingrese el costo por litro de agua"
+18. Lea costo_litros
+19. Escribir "Ingrese el número de minutos gastados en el mes"
+20. Lea numero_minutos
+21. Escribir "Ingrese el costo por cada minuto"
+22. Lea costo_minutos
+
+23. costoT_agua <-- numero_litros * costo_litros
+24. costoT_telefono <-- numero_minutos * costo_minutos
+25. costoTotal <-- costoT_agua + costoT_telefono
+
+26. Si edad <20 entonces
+27. descuento <--(porcentaje * costoTotal)/100
+28. costoTotal <-- costoTotal - descuento
+29. Fin si 
+30. Escribir "El valor total a pagar de sus servicios básicos es: " + costoTotal
+31. Fin

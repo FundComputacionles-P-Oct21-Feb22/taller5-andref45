@@ -1,0 +1,46 @@
+//En una hostería de la ciudad de Loja se hace un descuento del 10% si el cliente se hospeda más de 5 días, del 15% si se hospeda más de 10 días y del 20% si se hospeda más de 15 días. Elaborar un solución que pida como datos de entrada el número de días y el precio diario de la habitación y luego calcule e imprima el subtotal por pagar, el descuento y el total por pagar.
+
+1.Inicio
+2. numero_dias, i[0, n]
+3. precio_habitacion, d[0, n]
+4. subtotal, d[0, n]
+5. descuento1, d[0,n]
+6. descuento2, d[0,n]
+7. descuento3, d[0,n]
+8. porcentaje1 = 10;
+9. porcentaje2 = 15;
+10. porcentaje3 = 20;
+11. total_pagar = 0;
+
+12. Escribir "Ingrese el número de días en la hostería"
+13. Lea numero_dias
+14. Escribir "Ingrese el precio de la habitación"
+15. Lea precio_habitacion
+
+16. subtotal <-- precio_habitacion * numero_dias
+
+17. Si numero_dias < 0 entonces
+18. subtotal <-- 0
+19.	total_pagar <--0
+20. 	De lo contrario
+21.	  Si numero_dias <= 5 and numero_dias >= 0
+22. 	  total_pagar <-- subtotal
+23.		De lo contrario 
+24.		  Si numero_dias > 5 and numero_dias <= 10
+25.		  descuento1 <--(porcentaje1 * subtotal) / 100
+26.		  total_pagar = subtotal - descuento1
+27.			De lo contrario
+28. 			  Si numero_dias > 10 and numero_dias <= 15
+29. 			  descuento2 <--(porcentaje2 * subtotal) / 100
+30. 			  total_pagar <-- subtotal - descuento2
+31.				De lo contrario
+32.				  descuento3 <--(porcentaje3 * subtotal) / 100
+33.				  total_pagar <-- subtotal - descuento3
+34.			Fin si
+35.		Fin si
+36.	Fin si 
+37. Fin si
+38. Escribir "El subtotal a pagar es: " + subtotal
+39. Escribir "El total a pagar es: " + total_pagar
+40. Fin
+
